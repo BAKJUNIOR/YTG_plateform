@@ -9,6 +9,7 @@ import Hero from "./components/Hero/Hero";
 import About from './components/about/about.jsx';
 import Services from "./components/Services/Services";
 import Consultation from './components/Consultation/Consultation';
+import Cryptomonnaie from './components/Cryptomonnaie/Cryptomonnaie';
 import BlogsComp from "./components/Blogs/BlogsComp.jsx";
 import Footer from "./components/Footer/Footer";
 
@@ -41,6 +42,7 @@ const App = () => {
                     <Route path="/about" element={<About />} />
                     <Route path="/services" element={<Services />} />
                     <Route path="/consultation" element={<Consultation />} />
+                    <Route path="/cryptomonnaie" element={<Cryptomonnaie />} />
 
                 </Routes>
                 <Footer />
