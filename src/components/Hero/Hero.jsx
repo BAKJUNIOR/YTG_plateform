@@ -1,5 +1,6 @@
 import React from "react";
 import yellowCar from "../../assets/website/team.jpg";
+import {Link} from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -39,16 +40,16 @@ const Hero = () => {
             <p data-aos="fade-up" data-aos-delay="300">
               Votre partenaire pour naviguer dans le paysage en constante évolution des technologies avancées et de la formation professionnelle.
               De la conceptualisation à l'exécution, nous élaborons des solutions sur mesure qui génèrent des résultats et élèvent vos compétences et votre entreprise vers de nouveaux sommets.
-            </p>
-            <button
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-offset="0"
-              className="primary-btn"
+            </p> <br/>
+            <Link to="/services" data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                  className="primary-btn">
 
-            >
               Découvrir nos formations
-            </button>
+            </Link>
+
+
           </div>
         </div>
       </div>

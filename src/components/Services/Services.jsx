@@ -1,57 +1,62 @@
 import React from "react";
-import { FaChalkboardTeacher, FaLaptopCode, FaCoins } from "react-icons/fa";
-import { GiTeacher, GiReceiveMoney } from "react-icons/gi";
-import { MdOutlineSupportAgent } from "react-icons/md";
+import { FaChalkboardTeacher } from "react-icons/fa";
 
 const servicesData = [
   {
-    name: "Formation Continue",
+    name: "Data Science",
     icon: <FaChalkboardTeacher className="text-4xl text-primary" />,
-    link: "#",
+    link: "https://www.e-university.site",
     description:
-        "Nos formations continues couvrent des domaines tels que Data Science, IA, Blockchain Technology, Cybersecurity, Audit Informatique, et Réseaux Informatiques.",
+        "Explorez les principes fondamentaux et les techniques avancées de la science des données, y compris l'analyse statistique, l'apprentissage automatique et l'exploration de données.",
     aosDelay: "0",
   },
   {
-    name: "Formation Personnalisée",
-    icon: <FaLaptopCode className="text-4xl text-primary" />,
-    link: "#",
+    name: "Intelligence Artificielle (IA)",
+    icon: <FaChalkboardTeacher className="text-4xl text-primary" />,
+    link: "https://www.e-university.site",
     description:
-        "Nous proposons des formations personnalisées adaptées aux besoins spécifiques des" +
-        " entreprises et des professionnels.",
+        "Découvrez les concepts clés de l'intelligence artificielle, y compris les réseaux neuronaux, l'apprentissage en profondeur et le traitement du langage naturel.",
     aosDelay: "300",
   },
   {
-    name: "Tutoriat",
-    icon: <GiTeacher className="text-4xl text-primary" />,
-    link: "#",
+    name: "Technologie Blockchain",
+    icon: <FaChalkboardTeacher className="text-4xl text-primary" />,
+    link: "https://www.e-university.site",
     description:
-        "Nous offrons un soutien personnalisé pour les étudiants en licence et master en informatique avec des cours et des travaux pratiques.",
+        "Plongez dans le monde de la technologie blockchain, explorez ses applications potentielles et apprenez à mettre en œuvre des contrats intelligents.",
     aosDelay: "500",
   },
   {
-    name: "Consultation",
-    icon: <MdOutlineSupportAgent className="text-4xl text-primary" />,
-    link: "#",
+    name: "Cybersécurité",
+    icon: <FaChalkboardTeacher className="text-4xl text-primary" />,
+    link: "https://www.e-university.site",
     description:
-        "Nous fournissons des services de consultation en IA, Blockchain, Sécurité et Audit Informatique, Base de Données, et Réseaux Informatiques.",
+        "Apprenez les meilleures pratiques en matière de cybersécurité, de la gestion des menaces aux techniques d'atténuation des risques.",
     aosDelay: "700",
   },
   {
-    name: "Envoi et Réception de Cryptomonnaie",
-    icon: <FaCoins className="text-4xl text-primary" />,
-    link: "#",
+    name: "Audit Informatique",
+    icon: <FaChalkboardTeacher className="text-4xl text-primary" />,
+    link: "https://www.e-university.site",
     description:
-        "Facilitez vos transactions de cryptomonnaie avec notre module intuitif pour l'envoi et la réception de cryptomonnaies.",
+        "Maîtrisez les processus et les techniques d'audit informatique pour évaluer l'efficacité, la sécurité et la conformité des systèmes informatiques.",
     aosDelay: "900",
   },
   {
-    name: "Conversion de Cryptomonnaie",
-    icon: <GiReceiveMoney className="text-4xl text-primary" />,
-    link: "#",
+    name: "Génie Logiciel",
+    icon: <FaChalkboardTeacher className="text-4xl text-primary" />,
+    link: "https://www.e-university.site",
     description:
-        "Convertissez facilement vos cryptomonnaies en diverses devises pour répondre à vos besoins financiers.",
+        "Explorez les méthodes de développement logiciel, y compris les pratiques agiles, la conception orientée objet et les tests automatisés.",
     aosDelay: "1100",
+  },
+  {
+    name: "Réseaux Informatiques",
+    icon: <FaChalkboardTeacher className="text-4xl text-primary" />,
+    link: "https://www.e-university.site",
+    description:
+        "Découvrez les concepts fondamentaux des réseaux informatiques, y compris la topologie, les protocoles de communication et la sécurité réseau.",
+    aosDelay: "1300",
   },
 ];
 
@@ -67,13 +72,13 @@ const Services = () => {
                   data-aos="fade-up"
                   className="text-3xl font-semibold sm:text-3xl text-violet-950 dark:text-primary"
               >
-                Découvrez nos services
+                Découvrez nos formations
               </h1>
               <p
                   data-aos="fade-up"
                   className="text-gray-600 dark:text-gray-400 text-sm"
               >
-                Explorez les solutions technologiques avancées que nous proposons pour soutenir votre évolution numérique. Nos services innovants sont conçus pour accompagner votre entreprise, vos compétences professionnelles, et vos études vers de nouveaux sommets.
+                Explorez les différentes formations que nous proposons pour accompagner votre développement professionnel et académique.
               </p>
             </div>
 
@@ -91,18 +96,9 @@ const Services = () => {
                     <p className="text-gray-600 dark:text-gray-400">
                       {service.description}
                     </p>
+                    <a href={service.link} className="text-primary underline">En savoir plus</a>
                   </div>
               ))}
-            </div>
-
-            {/* Button */}
-            <div
-                data-aos="fade-up"
-                data-aos-delay="1300"
-                data-aos-offset="0"
-                className="text-center mt-4 sm:mt-8"
-            >
-              <button className="primary-btn">En savoir plus</button>
             </div>
           </div>
         </div>

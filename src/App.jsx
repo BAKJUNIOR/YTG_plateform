@@ -11,6 +11,9 @@ import Services from "./components/Services/Services";
 import Consultation from './components/Consultation/Consultation';
 import Cryptomonnaie from './components/Cryptomonnaie/Cryptomonnaie';
 import BlogsComp from "./components/Blogs/BlogsComp.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+import Login from "./components/Login/Login.jsx";
+import Register from "./components/Register/Register.jsx";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -43,6 +46,10 @@ const App = () => {
                     <Route path="/services" element={<Services />} />
                     <Route path="/consultation" element={<Consultation />} />
                     <Route path="/cryptomonnaie" element={<Cryptomonnaie />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/register" element={<Register />} />
+                    <Route path="/contact" element={<Contact />} />
+
 
                 </Routes>
                 <Footer />

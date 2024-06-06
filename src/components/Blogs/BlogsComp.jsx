@@ -23,7 +23,7 @@ const BlogsData = [
       "Nous proposons des formations personnalisées adaptées aux besoins spécifiques des" +
         " entreprises et des professionnels. ",
 
-    link: "/formation"
+    link: "/services"
   },
   {
     id: 3,
@@ -59,9 +59,7 @@ const BlogsComp = () => {
                 </Link>
             ))}
           </div>
-          <div className="text-center">
-            <button className="primary-btn">View All Posts</button>
-          </div>
+
         </section>
       </div>
   );
